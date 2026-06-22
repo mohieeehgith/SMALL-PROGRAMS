@@ -1,0 +1,14 @@
+def api(i):
+    if i==0:
+        return 0
+    if i==1:
+        return 1
+    else:
+        return (api(i-2)+(api(i-1)))
+
+
+def abc(n):
+    for i in range(n):
+        print (api(i),end=" ")
+
+abc(7)
